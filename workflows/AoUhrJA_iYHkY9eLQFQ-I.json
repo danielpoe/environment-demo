@@ -1,0 +1,97 @@
+{
+  "id": "AoUhrJA_iYHkY9eLQFQ-I",
+  "name": "test",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -384,
+        -96
+      ],
+      "id": "3d4b7741-3365-4ffd-9a47-f035d6a3cf43",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "dataTableId": {
+          "__rl": true,
+          "value": "EL1qumQBgoXx5vMY",
+          "mode": "list",
+          "cachedResultName": "datatable",
+          "cachedResultUrl": "/projects/LbdGuEMU0eMT7DG8/datatables/EL1qumQBgoXx5vMY"
+        }
+      },
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1.1,
+      "position": [
+        -176,
+        -96
+      ],
+      "id": "23c071eb-1c75-4aff-88ab-05614ec63ef7",
+      "name": "Get row(s)"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "c23e1e8d-20b9-4215-bb13-f8bce2cda54a",
+              "name": "flag",
+              "value": "={{$vars.flag}}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        32,
+        -96
+      ],
+      "id": "27902f59-364b-4cf4-8502-493af7e83306",
+      "name": "Edit Fields"
+    }
+  ],
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Get row(s)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get row(s)": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "availableInMCP": false
+  },
+  "triggerCount": 0,
+  "versionId": "a7d3082d-6f68-4142-99a8-5137d39a8319",
+  "owner": {
+    "type": "team",
+    "teamId": "28Q5NJGDnKnf6RYW",
+    "teamName": "My project"
+  },
+  "parentFolderId": null,
+  "isArchived": false
+}

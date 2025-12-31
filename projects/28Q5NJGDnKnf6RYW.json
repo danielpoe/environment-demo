@@ -1,0 +1,23 @@
+{
+  "id": "28Q5NJGDnKnf6RYW",
+  "name": "My project",
+  "icon": {
+    "type": "icon",
+    "value": "layers"
+  },
+  "description": null,
+  "type": "team",
+  "owner": {
+    "type": "team",
+    "teamId": "28Q5NJGDnKnf6RYW",
+    "teamName": "My project"
+  },
+  "variableStubs": [
+    {
+      "id": "ioXZfRtZD43hEi81",
+      "key": "flag",
+      "type": "string",
+      "value": ""
+    }
+  ]
+}
