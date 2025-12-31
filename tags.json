@@ -1,4 +1,14 @@
 {
-  "tags": [],
-  "mappings": []
+  "tags": [
+    {
+      "id": "6hETMmKTPF82PT5i",
+      "name": "newtag"
+    }
+  ],
+  "mappings": [
+    {
+      "workflowId": "XZHmaEZ3dojOJt6Kg0lZ2",
+      "tagId": "6hETMmKTPF82PT5i"
+    }
+  ]
 }
