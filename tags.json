@@ -7,6 +7,10 @@
     {
       "id": "9QIjRtJRbDylgafX",
       "name": "anothertag"
+    },
+    {
+      "id": "Yxg2tzUxpUKCPMux",
+      "name": "yet"
     }
   ],
   "mappings": [
@@ -17,6 +21,10 @@
     {
       "workflowId": "XZHmaEZ3dojOJt6Kg0lZ2",
       "tagId": "9QIjRtJRbDylgafX"
+    },
+    {
+      "workflowId": "XZHmaEZ3dojOJt6Kg0lZ2",
+      "tagId": "Yxg2tzUxpUKCPMux"
     }
   ]
 }
