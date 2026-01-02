@@ -1,14 +1,51 @@
 {
   "id": "XZHmaEZ3dojOJt6Kg0lZ2",
-  "name": "My workflow 2",
-  "nodes": [],
-  "connections": {},
+  "name": "My workflow 2 (test)",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "a3a33759-4d61-4c93-99e3-0c3a4c2ae40a",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        208,
+        0
+      ],
+      "id": "df57639a-d94b-46c9-9292-2074532c2cf9",
+      "name": "Edit Fields"
+    }
+  ],
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
   "settings": {
     "executionOrder": "v1",
     "availableInMCP": false
   },
   "triggerCount": 0,
-  "versionId": "114077d0-f9d7-45e1-ae56-ff6fffbe09d0",
+  "versionId": "4fecf12b-f017-4d82-909c-d39f97ee966f",
   "owner": {
     "type": "team",
     "teamId": "JcJrhQ2tVkdfMV4b",
