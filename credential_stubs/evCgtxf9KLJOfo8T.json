@@ -1,0 +1,15 @@
+{
+  "id": "evCgtxf9KLJOfo8T",
+  "name": "Action Network account - personal shared",
+  "type": "actionNetworkApi",
+  "data": {
+    "apiKey": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "Ku2YbXS37NtuQYfx",
+    "projectName": "Daniel Pötzinger <daniel.poetzinger@aoe.com>",
+    "personalEmail": "daniel.poetzinger@aoe.com"
+  },
+  "isGlobal": false
+}
