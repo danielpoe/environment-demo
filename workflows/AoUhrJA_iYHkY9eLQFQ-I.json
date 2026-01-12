@@ -1,6 +1,6 @@
 {
   "id": "AoUhrJA_iYHkY9eLQFQ-I",
-  "name": "test (test)",
+  "name": "webhook",
   "nodes": [
     {
       "parameters": {},
@@ -95,6 +95,21 @@
       ],
       "id": "812e1a32-cf73-4040-9a89-6140e613461d",
       "name": "Filter"
+    },
+    {
+      "parameters": {
+        "path": "f4c933c0-70df-4eb1-9972-b0235f422235",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        -384,
+        -304
+      ],
+      "id": "721124c3-8752-49e2-8ed5-6e2e8f99af4b",
+      "name": "Webhook",
+      "webhookId": "f4c933c0-70df-4eb1-9972-b0235f422235"
     }
   ],
   "connections": {
@@ -130,14 +145,30 @@
           }
         ]
       ]
+    },
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Get row(s)",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "settings": {
     "executionOrder": "v1",
     "availableInMCP": false
   },
-  "triggerCount": 0,
-  "versionId": "54191ec2-dd01-4637-8d3b-79e7b632fe62",
+  "triggerCount": 1,
+  "versionId": "7463d322-08d6-4460-a5f9-70c38ebf0e7b",
   "owner": {
     "type": "team",
     "teamId": "28Q5NJGDnKnf6RYW",

@@ -1,6 +1,6 @@
 {
   "id": "ZFjN8aXLq9Jbr4fslC4Wg",
-  "name": "My workflow 3",
+  "name": "security audit",
   "nodes": [
     {
       "parameters": {},
@@ -14,21 +14,20 @@
       "name": "When clicking ‘Execute workflow’"
     },
     {
-      "parameters": {},
-      "type": "n8n-nodes-base.actionNetwork",
+      "parameters": {
+        "resource": "audit",
+        "operation": "generate",
+        "additionalOptions": {},
+        "requestOptions": {}
+      },
+      "type": "n8n-nodes-base.n8n",
       "typeVersion": 1,
       "position": [
-        208,
+        416,
         0
       ],
-      "id": "8c1d5488-937d-4a35-9e36-a5e13009e2b7",
-      "name": "Create an attendance",
-      "credentials": {
-        "actionNetworkApi": {
-          "id": "evCgtxf9KLJOfo8T",
-          "name": "Action Network account - personal shared"
-        }
-      }
+      "id": "b2c962ad-f820-47fb-b438-49362f1a73cc",
+      "name": "Generate a security audit"
     }
   ],
   "connections": {
@@ -36,7 +35,7 @@
       "main": [
         [
           {
-            "node": "Create an attendance",
+            "node": "Generate a security audit",
             "type": "main",
             "index": 0
           }
@@ -49,7 +48,7 @@
     "availableInMCP": false
   },
   "triggerCount": 0,
-  "versionId": "9bf3336a-ab46-4982-b411-76e8419807ba",
+  "versionId": "17aa4e56-be74-474f-835c-b6ec3999a22f",
   "owner": {
     "type": "team",
     "teamId": "28Q5NJGDnKnf6RYW",
