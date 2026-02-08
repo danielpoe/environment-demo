@@ -110,6 +110,19 @@
       "id": "721124c3-8752-49e2-8ed5-6e2e8f99af4b",
       "name": "Webhook",
       "webhookId": "f4c933c0-70df-4eb1-9972-b0235f422235"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Loop over input items and add a new field called 'myNewField' to the JSON of each one\nfor (const item of $input.all()) {\n  item.json.myNewField = 1;\n}\n\nreturn $input.all();"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        112,
+        -80
+      ],
+      "id": "5f5ba234-3e16-445a-b696-fc0d9ae070c0",
+      "name": "Code in JavaScript"
     }
   ],
   "connections": {
@@ -128,7 +141,7 @@
       "main": [
         [
           {
-            "node": "Edit Fields",
+            "node": "Code in JavaScript",
             "type": "main",
             "index": 0
           }
@@ -161,6 +174,17 @@
           }
         ]
       ]
+    },
+    "Code in JavaScript": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "settings": {
@@ -168,7 +192,7 @@
     "availableInMCP": false
   },
   "triggerCount": 1,
-  "versionId": "7463d322-08d6-4460-a5f9-70c38ebf0e7b",
+  "versionId": "c843b2aa-5999-4b17-83e3-0222612cd8cc",
   "owner": {
     "type": "team",
     "teamId": "28Q5NJGDnKnf6RYW",
