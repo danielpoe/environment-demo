@@ -91,7 +91,7 @@
       "typeVersion": 2.3,
       "position": [
         256,
-        -240
+        -384
       ],
       "id": "812e1a32-cf73-4040-9a89-6140e613461d",
       "name": "Filter"
@@ -110,6 +110,17 @@
       "id": "721124c3-8752-49e2-8ed5-6e2e8f99af4b",
       "name": "Webhook",
       "webhookId": "f4c933c0-70df-4eb1-9972-b0235f422235"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        464,
+        -384
+      ],
+      "id": "723104b4-c0db-4e86-b30a-3e699e55d53a",
+      "name": "Merge"
     }
   ],
   "connections": {
@@ -161,6 +172,17 @@
           }
         ]
       ]
+    },
+    "Filter": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "settings": {
@@ -168,7 +190,7 @@
     "availableInMCP": false
   },
   "triggerCount": 1,
-  "versionId": "7463d322-08d6-4460-a5f9-70c38ebf0e7b",
+  "versionId": "70e9ac97-6fc6-4873-a4ab-481692038514",
   "owner": {
     "type": "team",
     "teamId": "28Q5NJGDnKnf6RYW",
