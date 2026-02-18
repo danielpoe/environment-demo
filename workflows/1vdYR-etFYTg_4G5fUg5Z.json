@@ -1,0 +1,19 @@
+{
+  "id": "1vdYR-etFYTg_4G5fUg5Z",
+  "name": "111",
+  "nodes": [],
+  "connections": {},
+  "settings": {
+    "executionOrder": "v1",
+    "availableInMCP": false
+  },
+  "triggerCount": 0,
+  "versionId": "c41adb85-8d88-40a8-b023-4db939c97575",
+  "owner": {
+    "type": "team",
+    "teamId": "JcJrhQ2tVkdfMV4b",
+    "teamName": "test"
+  },
+  "parentFolderId": null,
+  "isArchived": false
+}

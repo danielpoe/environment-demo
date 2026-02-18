@@ -1,0 +1,16 @@
+{
+  "id": "zINKLy37FNCLtqg3",
+  "name": "AcuityScheduling account",
+  "type": "acuitySchedulingOAuth2Api",
+  "data": {
+    "clientId": "",
+    "clientSecret": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "rq93qwkQEQA3KDA2",
+    "projectName": "Viewer Viewer <daniel.poetzinger+viewer@aoe.com>",
+    "personalEmail": "daniel.poetzinger+viewer@aoe.com"
+  },
+  "isGlobal": false
+}

@@ -1,0 +1,201 @@
+{
+  "id": "AoUhrJA_iYHkY9eLQFQ-I",
+  "name": "webhook",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -384,
+        -96
+      ],
+      "id": "3d4b7741-3365-4ffd-9a47-f035d6a3cf43",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "dataTableId": {
+          "__rl": true,
+          "value": "EL1qumQBgoXx5vMY",
+          "mode": "list",
+          "cachedResultName": "datatable",
+          "cachedResultUrl": "/projects/LbdGuEMU0eMT7DG8/datatables/EL1qumQBgoXx5vMY"
+        }
+      },
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1.1,
+      "position": [
+        -176,
+        -96
+      ],
+      "id": "23c071eb-1c75-4aff-88ab-05614ec63ef7",
+      "name": "Get row(s)"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "c23e1e8d-20b9-4215-bb13-f8bce2cda54a",
+              "name": "flag",
+              "value": "={{$vars.flag}}",
+              "type": "string"
+            },
+            {
+              "id": "c5675c52-7d5a-4444-9c5d-6032fef40456",
+              "name": "newfield",
+              "value": "",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        48,
+        -240
+      ],
+      "id": "27902f59-364b-4cf4-8502-493af7e83306",
+      "name": "Edit Fields"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "1ea03712-1c39-4737-b3c4-dd21d9c9c27a",
+              "leftValue": "",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.filter",
+      "typeVersion": 2.3,
+      "position": [
+        256,
+        -384
+      ],
+      "id": "812e1a32-cf73-4040-9a89-6140e613461d",
+      "name": "Filter"
+    },
+    {
+      "parameters": {
+        "path": "f4c933c0-70df-4eb1-9972-b0235f422235",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        -384,
+        -304
+      ],
+      "id": "721124c3-8752-49e2-8ed5-6e2e8f99af4b",
+      "name": "Webhook",
+      "webhookId": "f4c933c0-70df-4eb1-9972-b0235f422235"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        464,
+        -384
+      ],
+      "id": "723104b4-c0db-4e86-b30a-3e699e55d53a",
+      "name": "Merge"
+    }
+  ],
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Get row(s)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get row(s)": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields": {
+      "main": [
+        [
+          {
+            "node": "Filter",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Get row(s)",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filter": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "availableInMCP": false
+  },
+  "triggerCount": 1,
+  "versionId": "70e9ac97-6fc6-4873-a4ab-481692038514",
+  "owner": {
+    "type": "team",
+    "teamId": "28Q5NJGDnKnf6RYW",
+    "teamName": "My project"
+  },
+  "parentFolderId": null,
+  "isArchived": false
+}

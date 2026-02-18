@@ -1,0 +1,19 @@
+{
+  "id": "RZSjpH6mCrXjbbR2KZnsd",
+  "name": "222",
+  "nodes": [],
+  "connections": {},
+  "settings": {
+    "executionOrder": "v1",
+    "availableInMCP": false
+  },
+  "triggerCount": 0,
+  "versionId": "2b7d00db-671c-4496-932d-63f1a8841be8",
+  "owner": {
+    "type": "team",
+    "teamId": "JcJrhQ2tVkdfMV4b",
+    "teamName": "test"
+  },
+  "parentFolderId": "K3FkPktAcDgYOELP",
+  "isArchived": false
+}

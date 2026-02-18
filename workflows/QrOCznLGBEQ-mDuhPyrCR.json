@@ -1,0 +1,20 @@
+{
+  "id": "QrOCznLGBEQ-mDuhPyrCR",
+  "name": "daniel 2 personal test",
+  "nodes": [],
+  "connections": {},
+  "settings": {
+    "executionOrder": "v1",
+    "availableInMCP": false
+  },
+  "triggerCount": 0,
+  "versionId": "896237a2-fedc-4033-bca1-213596345234",
+  "owner": {
+    "type": "personal",
+    "projectId": "rq93qwkQEQA3KDA2",
+    "projectName": "Viewer Viewer <daniel.poetzinger+viewer@aoe.com>",
+    "personalEmail": "daniel.poetzinger+viewer@aoe.com"
+  },
+  "parentFolderId": null,
+  "isArchived": false
+}

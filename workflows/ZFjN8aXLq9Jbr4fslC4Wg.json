@@ -1,0 +1,59 @@
+{
+  "id": "ZFjN8aXLq9Jbr4fslC4Wg",
+  "name": "security audit",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "6522ded4-f373-4922-8c30-75fdd7acfc54",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "resource": "audit",
+        "operation": "generate",
+        "additionalOptions": {},
+        "requestOptions": {}
+      },
+      "type": "n8n-nodes-base.n8n",
+      "typeVersion": 1,
+      "position": [
+        416,
+        0
+      ],
+      "id": "b2c962ad-f820-47fb-b438-49362f1a73cc",
+      "name": "Generate a security audit"
+    }
+  ],
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Generate a security audit",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "availableInMCP": false
+  },
+  "triggerCount": 0,
+  "versionId": "17aa4e56-be74-474f-835c-b6ec3999a22f",
+  "owner": {
+    "type": "team",
+    "teamId": "28Q5NJGDnKnf6RYW",
+    "teamName": "My project"
+  },
+  "parentFolderId": null,
+  "isArchived": false
+}

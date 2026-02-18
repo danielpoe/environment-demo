@@ -1,0 +1,32 @@
+{
+  "id": "0XQNsSFUTxhaFR99YAhhC",
+  "name": "my personal",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "69c23149-57c7-41cc-b280-b81b63c9571c",
+      "name": "When clicking ‘Execute workflow’"
+    }
+  ],
+  "connections": {},
+  "settings": {
+    "executionOrder": "v1",
+    "availableInMCP": false
+  },
+  "triggerCount": 0,
+  "versionId": "160649ed-58b9-4a31-83bd-ca0a3034e752",
+  "owner": {
+    "type": "personal",
+    "projectId": "Ku2YbXS37NtuQYfx",
+    "projectName": "Daniel Pötzinger <daniel.poetzinger@aoe.com>",
+    "personalEmail": "daniel.poetzinger@aoe.com"
+  },
+  "parentFolderId": null,
+  "isArchived": false
+}
